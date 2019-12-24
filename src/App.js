@@ -1,14 +1,15 @@
 import React from 'react';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
 import {Layout} from 'antd'
 
-const {Header, Sider, Content} = Layout
-
 import Home from './components/Home'
 
-export default class App extends React.Component() {
+const {Header, Sider, Content} = Layout
+
+
+class App extends React.Component() {
   render() {
     return (
       <Layout className="App">
