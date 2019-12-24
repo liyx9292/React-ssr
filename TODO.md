@@ -1,2 +1,5 @@
-- ssr
-- 同构
+- ssr √
+- 同构 √
+- 增加router
+- 增加store
+- 增加mock数据

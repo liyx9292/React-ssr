@@ -39,9 +39,7 @@ router.get('*', ctx => {
     <App />
   )
   const html = getHtml(rNode)
-  console.log(html)
   ctx.body = html
-  // ctx.body = 111
 })
 
 app.use(serve(path.resolve(__dirname, '../')))
