@@ -3,13 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
 import {Layout} from 'antd'
+import routes from './config/router'
 
 import Home from './components/Home'
 
 const {Header, Sider, Content} = Layout
 
 
-class App extends React.Component() {
+class App extends React.Component {
   render() {
     return (
       <Layout className="App">
@@ -20,7 +21,9 @@ class App extends React.Component() {
         </Sider>
         <Content>
           <Switch>
-            <Route />
+            {routes.map(item => {
+              return (<Route path={item.path} exact={true} component={item.component}/>)
+            })}
           </Switch>
         </Content>
       </Layout>
